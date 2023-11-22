@@ -1,0 +1,103 @@
+criar um banco de dacos com essa extrutura:
+
+Tabela "bicicleta":
+
+COR (chave primária)
+REGISTRO
+MODELO
+ANO
+CATEGORIA
+ID_CLIENTE
+
+Tabela "user":
+
+ID (chave primária)
+NOME
+CONTATO
+ADM
+CARGO
+
+Tabela "pecas":
+
+ID (chave primária)
+NOME
+MODELO
+VALOR
+QTD
+FABRICANTE
+ANO
+ID_FORNECEDOR
+
+Tabela "fornecedor":
+
+ID (chave primária)
+NOME
+CONTATO
+REGISTO
+TIPO DE PRODUTO
+
+Tabela "cliente":
+
+ID (chave primária)
+NOME
+TELEFONE
+EMAIL
+ID_ENDERECO_CLIENTE
+
+Tabela "servico":
+
+ID (chave primária)
+DESCRIÇÃO
+
+Tabela "categoria_servico":
+
+ID (chave primária)
+CATEGORIA
+ID_SERVICO
+KM
+MESES
+
+Tabela "revisao":
+
+ID_REVISAO (chave primária)
+DATA
+CATEGORIA
+ID_BICICLETA
+
+
+Tabela "preco":
+
+ID (chave primária)
+HORA
+EXECUCAO
+ID_SERVICO
+ID_CATEGORIA_SERVICO
+
+Tabela "ordem":
+
+ID (chave primária)
+DESC_PROBLEMA
+INICIO
+ID_BICICLETA
+STATUS
+FIM
+ID_SERVICO
+ID_USUARIO
+
+Tabela "ENDERECO_CLIENTE":
+
+PAIS
+ESTADO_DISTRITO
+CIDADE
+RUA
+NUMERO_PORTA
+
+Tabela "OFICINA":
+
+ID (chave primária)
+NOME
+ENDEREÇO
+NUMERO_PORTA
+TELEFONE
+EMAIL
+RESPONSÁVEL
